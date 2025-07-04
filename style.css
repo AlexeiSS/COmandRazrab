@@ -26,12 +26,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     max-width: 1440px;
+    height: 1065px;
     margin: 0 auto;
     padding: 0 100px;
 }
 
+.container--header {
+    height: 149px;
+}
+
 .header {
-    padding-bottom: 1000px;
+    height: 1000px;
     background-color: #fff;
 }
 
@@ -284,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     background-color: #F3FBF8;
 }
 
@@ -314,11 +319,119 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
 /* HEADER */
 
+/*MAIN*/
 
+
+
+.section_1-content-block {
+    position: relative;
+    padding-top: 141px;
+    padding-bottom: 146px;
+    height: 100%;
+}
+
+.section_1-content-block__info-block {
+    height: 100%;
+    max-width: 671px;
+}
+
+.section_1-content-block__img {
+    width: 600px;
+    height: 600px;
+
+    position: absolute;
+    right: 0;
+    bottom: 146px;
+}
+
+.info-block__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 129%;
+    color: #222;
+
+    margin-bottom: 20px;
+}
+
+.info-block__subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: #555;
+
+    margin-bottom: 36px;
+}
+
+.cards__section-1-card {
+    max-width: 500px;
+    height: 160px;
+    padding: 40px 59px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #fff;
+}
+
+.green {
+    background-color: #f3fbf8;;
+}
+
+.section-1-card__img {
+    width: 80px;
+    height: 80px;
+
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+
+    background-color: #f3fbf8;
+}
+
+.white {
+    background-color: #fff;
+}
+
+
+.section-1-card__s1-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    max-width: 277.5px;
+}
+
+.s1-card-text__subtitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222;
+}
+
+.s1-card-text__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #555;
+}
+
+.cards__green-arrow {
+    margin-top: 29px;
+    margin-left: 241px;
+}
+
+/*MAIN*/
 
 
 
