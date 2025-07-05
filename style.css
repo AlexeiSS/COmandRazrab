@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 :root {
     --font-family: "DM Sans", sans-serif;
     --second-family: "Rosario", sans-serif;
   }
-=======
+
 
 @import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
@@ -11,7 +11,7 @@
 /* ---RESET-STYLES,CONTAINERS,FONT--- */
 
 /* Reset-styles */
->>>>>>> ce813b863b2510ca91e2627480f93ca70abc7a00
+
 
 * {
 	padding: 0px;
@@ -64,12 +64,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---RESET-STYLES,CONTAINERS,FONT--- */
 
->>>>>>> ce813b863b2510ca91e2627480f93ca70abc7a00
+
 
 
 /* ---HEADER--- */
 
-<<<<<<< HEAD
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -77,12 +77,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
     padding-bottom: 1000px;
-=======
+
 
 
 .header {
     height: 1000px;
->>>>>>> ce813b863b2510ca91e2627480f93ca70abc7a00
     background-color: #fff;
 }
 
@@ -91,11 +90,9 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: center;
     height: 149px;
-<<<<<<< HEAD
-    padding: 0 100px;
-=======
 
->>>>>>> ce813b863b2510ca91e2627480f93ca70abc7a00
+    padding: 0 100px;
+
 }
 
 /* Navigation-Links + Logo*/
@@ -136,21 +133,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-<<<<<<< HEAD
+
 .navigation__holder {
-=======
 .links__holder {
->>>>>>> ce813b863b2510ca91e2627480f93ca70abc7a00
+
     list-style-type: none;
     padding: 0;
     display: flex;
     flex-grow: 1;
     justify-content: space-evenly;
-<<<<<<< HEAD
-=======
+
+
     align-items: center;
     margin: 0;
->>>>>>> ce813b863b2510ca91e2627480f93ca70abc7a00
 
     min-width: 374px;
     /*margin-right: 218px;*/
@@ -207,10 +202,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .registration-button {
     cursor: pointer;
-<<<<<<< HEAD
+
 }
 
-=======
+
 
 }
 
@@ -494,7 +489,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
->>>>>>> ce813b863b2510ca91e2627480f93ca70abc7a00
 html, body {
   position: relative;
   height: 100%;
@@ -818,5 +812,4 @@ p {
     background-color: #7CFC00; /* Более яркий мятный при наведении */
 }
 
-=======
->>>>>>> ce813b863b2510ca91e2627480f93ca70abc7a00
+
