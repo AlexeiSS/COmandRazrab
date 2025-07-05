@@ -1,3 +1,139 @@
+:root {
+    --font-family: "DM Sans", sans-serif;
+    --second-family: "Rosario", sans-serif;
+  }
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+    box-sizing: border-box;
+}
+
+
+
+/* ---HEADER--- */
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-bottom: 1000px;
+    background-color: #fff;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 149px;
+    padding: 0 100px;
+}
+
+/* Navigation-Links + Logo*/
+
+.navigation__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 592px;
+    flex-grow: 1;
+}
+
+
+.logo {
+    flex-grow: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.holder__links a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #222;
+
+    font-family: var(--font-family);
+}
+
+
+
+
+/*Navigation-Buttons*/
+
+.navigation__buttons {
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+}
+
+
+.navigation__holder {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+    min-width: 374px;
+    /*margin-right: 218px;*/
+
+}
+
+
+
+
+.circle-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    min-width: 100px;
+
+    margin-right: 32px;
+}
+
+
+.circle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+    background-color: #f3fbf8;
+}
+
+.circle-btn svg {
+    position: absolute;
+    top: 6.5px;
+    right: 10.5px;
+}
+
+.registration-button {
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+    
+    background-color: #09a66d;
+    color: #fff;
+
+    font-family: var(--font-family);
+}
+
+.circle-btn:hover {
+    cursor: pointer;
+}
+
+.registration-button {
+    cursor: pointer;
+}
+
 html, body {
   position: relative;
   height: 100%;
@@ -85,3 +221,238 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+.footer {
+    background-color: #ffffff;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Стили для каждого блока в footer */
+.footer > div {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Стили для заголовков в footer */
+.footer h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #006b02;
+}
+
+/* Стили для параграфов в footer */
+.footer p {
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Стили для блока с планетой */
+.Planet_photo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer_photo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Стили для навигации и ресурсов */
+.Navigation_footer p,
+.resources p {
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-bottom: 10px;
+}
+
+.Navigation_footer p:hover,
+.resources p:hover {
+    color: #00a822;
+}
+
+/* Стили для контактов */
+.Contact_us p {
+    margin-bottom: 20px;
+}
+
+.social-media_photos {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media_photos img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-media_photos img:hover {
+    transform: scale(1.1);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer > div {
+        max-width: 100%;
+    }
+    
+    .footer h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .Planet_photo {
+        align-items: center;
+    }
+    
+    .social-media_photos {
+        justify-content: center;
+    }
+}
+.footer_photo {
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.footer_photo:hover {
+    transform: rotate(15deg) scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(165, 253, 0, 0.7));
+}
+.Big_card_with_phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_with_phone {
+    /* Стили для левой части с телефоном */
+    flex: 0 0 auto;
+}
+
+.card_with_phone-text {
+    /* Стили для правой части с текстом */
+    flex: 1;
+    padding-left: 40px; /* Отступ между изображением и текстом */
+}
+
+.Download_buttons {
+    display: flex;
+    gap: 15px; /* Расстояние между кнопками загрузки */
+    margin-top: 20px;
+}
+.Big_card_with_phone {
+    display: flex;
+    align-items: center;
+}
+
+.card_with_phone {
+    flex: 0 0 auto;
+    margin-right: 60px; /* Больший отступ между изображением и текстом */
+}
+
+.card_with_phone-text {
+    flex: 1;
+    text-align: right; /* Выравнивание текста вправо */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Выравнивание всех элементов вправо */
+}
+
+.Big_card_with_phone {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Можно регулировать по необходимости */
+    margin: 0 auto;
+}
+
+.card_with_phone {
+    flex: 0 0 auto;
+    margin-right: 60px;
+}
+
+.card_with_phone-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.Download_button button {
+    background-color: #98FB98;
+    color: #333;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    width: 200px; /* Фиксированная ширина или можно использовать max-content */
+}
+
+.Download_buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+}
+
+p {
+    text-align: right;
+    margin: 15px 0;
+    width: 100%;
+}
+
+/* Для растягивания кнопок магазинов */
+.app_store, .Google_play {
+    display: block;
+}
+
+.app_store img, .Google_play img {
+    width: 150px; /* или auto для оригинального размера */
+    height: auto;
+}
+
+.Download_button button:hover {
+    background-color: #7CFC00; /* Более яркий мятный при наведении */
+}
+
