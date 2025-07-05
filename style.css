@@ -20,8 +20,7 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-=======
+
 p {
     margin: 0;
 }
@@ -77,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
     padding-bottom: 1000px;
+}
 
 
 
@@ -135,6 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .navigation__holder {
+}
 .links__holder {
 
     list-style-type: none;
@@ -207,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-}
+
 
 
 /* Content-text */
