@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
 
-:root {
-    --font-family: "DM Sans", sans-serif;
-    --second-family: "Rosario", sans-serif;
-  }
+/* ---RESET-STYLES,CONTAINERS,FONT--- */
+
+/* Reset-styles */
 
 * {
 	padding: 0px;
@@ -22,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-/* ---HEADER--- */
+/* Containers */
 
 .container {
     max-width: 1440px;
@@ -32,8 +31,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container--header {
+    max-width: 1440px;
     height: 149px;
+    margin: 0 auto;
+    padding: 0 100px;
 }
+
+.container--green {
+    max-width: 1440px;
+    height: 850px;
+    margin: 0 auto;
+    padding: 0 100px;
+    background-color: #F3FBF8;
+}
+
+/* Font(s) */
+
+:root {
+    --font-family: "DM Sans", sans-serif;
+    --second-family: "Rosario", sans-serif;
+  }
+
+
+/* ---RESET-STYLES,CONTAINERS,FONT--- */
+
+
+
+/* ---HEADER--- */
+
+
 
 .header {
     height: 1000px;
@@ -86,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.navigation__holder {
+.links__holder {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -160,20 +186,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 93px;
 }
 
-.content__title-text {
+.h-content__title-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-.container-green {
-    background-color: #F3FBF8;
-    height: 850px;
-}
 
-
-.title-text__title {
+.h-title-text__title {
     font-family: var(--second-family);
     margin: 0;
 
@@ -183,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
 }
 
-.title_text__subtitle-text {
+.h-title_text__subtitle-text {
     max-width: 637px;
     margin: 0;
     margin-top: 20px;
@@ -236,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Image-Block */
 
-.content__image-block {
+.h-content__image-block {
     display: flex;
     justify-content: space-between;
     margin-top: 58.5px;
@@ -244,11 +265,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.image-block__image {
+.h-image-block__image {
     margin-left: 20px;
 }
 
-.image-block__header-cards {
+.h-image-block__cards {
     margin-top: 23.5px;
     padding: 17px 0;
     display: flex;
@@ -256,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
-.header-cards__header-card {
+.h-cards__card {
     width: 250px;
     height: 116px;
     padding: 17px 0;
@@ -269,20 +290,20 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
 }
 
-.header-card-1 {
+.h-card-1 {
     padding-right: 46px;
 }
 
-.header-card-2 {
+.h-card-2 {
     padding-right: 33px;
 }
 
-.header-card-3 {
+.h-card-3 {
     padding-right: 42px;
 }
 
 
-.header-card__image {
+.h-card__image {
     width: 56px;
     height: 56px;
     border-radius: 100%;
@@ -294,13 +315,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.header-card__info {
+.h-card__info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.info__number {
+.h-card-info__number {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 48px;
@@ -309,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
 
-.info__desc {
+.h-card-info__desc {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
