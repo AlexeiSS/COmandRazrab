@@ -376,6 +376,7 @@ h1, h2, h3, h4, h5, h6 {
 /*MAIN*/
 
 
+/*Section 1*/
 
 .section_1-content-block {
     position: relative;
@@ -481,6 +482,58 @@ h1, h2, h3, h4, h5, h6 {
 .cards__green-arrow {
     margin-top: 29px;
     margin-left: 241px;
+}
+
+/*Section 2*/
+
+.s2-content {
+    padding-top: 89px;
+    padding-bottom: 143px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s2-image {
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+
+.s2-content__image-block {
+    width: 600px;
+    height: 600px;
+}
+
+.s2-content__content-block {
+    margin-top: 30.5px;
+    max-width: 574px;
+}
+
+.s2-content-block__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 129%;
+    color: #222;
+}
+
+.s2-content-block__subtitle-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: #555;
+
+    margin-top: 20px;
+}
+
+.order-button--explore {
+    width: 176px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
 }
 
 /*MAIN*/
